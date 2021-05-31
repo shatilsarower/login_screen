@@ -11,7 +11,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: ListView(),
+          child: ListView(
+            physics: BouncingScrollPhysics(),
+          ),
         ),
       ),
     );
