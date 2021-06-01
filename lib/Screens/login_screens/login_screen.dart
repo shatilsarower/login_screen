@@ -18,8 +18,12 @@ class _LoginScreenState extends State<LoginScreen> {
         Column(
           children: [
             MyTextFormField(
-              hintText: "Enter Your Name",
+              hintText: "Email",
               obscuretext: false,
+            ),
+            MyTextFormField(
+              hintText: "Password",
+              obscuretext: true,
             ),
           ],
         ),
