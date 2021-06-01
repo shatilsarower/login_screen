@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginin/widgets/myformfield_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -9,7 +10,19 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget buildTopPart() {
     return Column(
       children: [
-        Image.asset("image/Logo.png"),
+        Image.asset(
+          "image/logo.png",
+          height: 150,
+          width: 150,
+        ),
+        Column(
+          children: [
+            MyTextFormField(
+              hintText: "Enter Your Name",
+              obscuretext: false,
+            ),
+          ],
+        ),
       ],
     );
   }
