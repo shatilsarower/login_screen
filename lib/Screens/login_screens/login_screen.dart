@@ -6,6 +6,14 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  Widget buildTopPart() {
+    return Column(
+      children: [
+        Image.asset("image/Logo.png"),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,6 +21,14 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Center(
           child: ListView(
             physics: BouncingScrollPhysics(),
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  buildTopPart(),
+                ],
+              ),
+            ],
           ),
         ),
       ),
