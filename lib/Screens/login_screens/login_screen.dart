@@ -27,6 +27,15 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ],
         ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(child: )
+            ],
+          ),
+        ),
       ],
     );
   }
