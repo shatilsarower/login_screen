@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyButtonWidget extends StatelessWidget {
   final String text;
-  final String color;
+  final Color color;
   final VoidCallback onPress;
   MyButtonWidget(
       {required this.color, required this.onPress, required this.text});
@@ -11,6 +11,7 @@ class MyButtonWidget extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: MaterialButton(
+        color: color,
         height: 45,
         elevation: 0,
         shape: OutlineInputBorder(
@@ -22,7 +23,7 @@ class MyButtonWidget extends StatelessWidget {
           text,
           style: TextStyle(
             fontSize: 20,
-            color: color,
+            color: Colors.white,
           ),
         ),
       ),

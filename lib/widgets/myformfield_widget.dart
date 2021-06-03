@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
+// ignore: must_be_immutable
 class MyTextFormField extends StatefulWidget {
   final String hintText;
   bool obscuretext = false;

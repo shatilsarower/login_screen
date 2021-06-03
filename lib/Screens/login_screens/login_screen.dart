@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginin/widgets/my_button_widget.dart';
 import 'package:loginin/widgets/myformfield_widget.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -32,7 +33,13 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(child: )
+              Expanded(
+                child: MyButtonWidget(
+                  onPress: () {},
+                  color: Colors.white,
+                  text: 'Login',
+                ),
+              ),
             ],
           ),
         ),
