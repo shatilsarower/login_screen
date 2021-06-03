@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginin/AppColors/app_colors.dart';
+import 'package:loginin/style/login_screen_style.dart';
 import 'package:loginin/widgets/my_button_widget.dart';
 import 'package:loginin/widgets/myformfield_widget.dart';
 
@@ -41,8 +42,25 @@ class _LoginScreenState extends State<LoginScreen> {
                   text: 'Login',
                 ),
               ),
+              SizedBox(
+                width: 20,
+              ),
+              Expanded(
+                child: MyButtonWidget(
+                  onPress: () {},
+                  color: AppColors.baseDarkOrangeColor,
+                  text: 'Sign Up',
+                ),
+              ),
             ],
           ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Text(
+          "Forgot Password?",
+          style: LoginScreenStyle.forgotPasswordStyle,
         ),
       ],
     );
