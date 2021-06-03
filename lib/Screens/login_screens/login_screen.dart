@@ -66,6 +66,12 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
+  Widget buildBottomPart() {
+    return Column(
+      children: [],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   buildTopPart(),
+                  buildBottomPart(),
                 ],
               ),
             ],
