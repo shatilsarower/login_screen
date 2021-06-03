@@ -6,4 +6,7 @@ class LoginScreenStyle {
     color: AppColors.baseDarkPinkColor,
     fontSize: 20,
   );
+  static const TextStyle signinSocialNetworks = TextStyle(
+    color: AppColors.baseBlackColor,
+  );
 }

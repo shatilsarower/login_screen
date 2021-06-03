@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginin/Extracted_Widget/top_part.dart';
+import 'package:loginin/style/login_screen_style.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -12,8 +13,17 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget buildBottomPart() {
-    return Column(
-      children: [],
+    return Container(
+      height: 300,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Text(
+            "or sign in with social networks",
+            style: LoginScreenStyle.signinSocialNetworks,
+          ),
+        ],
+      ),
     );
   }
 
