@@ -15,7 +15,7 @@ class MyButtonWidget extends StatelessWidget {
         height: 45,
         elevation: 0,
         shape: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10.0),
           borderSide: BorderSide.none,
         ),
         onPressed: onPress,
