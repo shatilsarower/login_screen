@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:loginin/AppColors/app_colors.dart';
 import 'package:loginin/Extracted_Widget/top_part.dart';
 import 'package:loginin/style/login_screen_style.dart';
+import 'package:loginin/svgimage/svg_image.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -29,17 +31,58 @@ class _LoginScreenState extends State<LoginScreen> {
           Padding(
             padding: EdgeInsets.all(20.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 MaterialButton(
                   shape: OutlineInputBorder(
                     borderSide: BorderSide(
                       width: 0.5,
-                      color: AppColors.baseGrey40Color,
+                      //color: AppColors.baseGrey40Color,
                     ),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   onPressed: () {},
-                  child: ,
+                  child: SvgPicture.asset(
+                    SvgImage.facebook,
+                    color: AppColors.baseBlackColor,
+                    width: 45,
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                MaterialButton(
+                  shape: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      width: 0.5,
+                      //color: AppColors.baseGrey40Color,
+                    ),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  onPressed: () {},
+                  child: SvgPicture.asset(
+                    SvgImage.google,
+                    color: AppColors.baseDarkOrangeColor,
+                    width: 45,
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                MaterialButton(
+                  shape: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      width: 0.5,
+                      //color: AppColors.baseGrey40Color,
+                    ),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  onPressed: () {},
+                  child: SvgPicture.asset(
+                    SvgImage.twitter,
+                    color: AppColors.baseBlackColor,
+                    width: 45,
+                  ),
                 ),
               ],
             ),
