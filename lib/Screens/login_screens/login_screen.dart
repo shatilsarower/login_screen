@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginin/AppColors/app_colors.dart';
 import 'package:loginin/Extracted_Widget/top_part.dart';
 import 'package:loginin/style/login_screen_style.dart';
 
@@ -21,6 +22,26 @@ class _LoginScreenState extends State<LoginScreen> {
           Text(
             "or sign in with social networks",
             style: LoginScreenStyle.signinSocialNetworks,
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Row(
+              children: [
+                MaterialButton(
+                  shape: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      width: 0.5,
+                      color: AppColors.baseGrey40Color,
+                    ),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  onPressed: () {},
+                ),
+              ],
+            ),
           ),
         ],
       ),
