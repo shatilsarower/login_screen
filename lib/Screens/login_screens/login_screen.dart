@@ -39,6 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     borderRadius: BorderRadius.circular(5),
                   ),
                   onPressed: () {},
+                  child: ,
                 ),
               ],
             ),
@@ -85,5 +86,3 @@ class TopPart extends StatelessWidget {
     );
   }
 }
-
-// ignore: camel_case_types
