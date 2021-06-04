@@ -15,7 +15,7 @@ class Top_Part extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          "image/logo.png",
+          "image/Logo.png",
           height: 150,
           width: 150,
         ),
